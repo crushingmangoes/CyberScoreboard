@@ -1,0 +1,11 @@
+use auxiliary/scanner/ftp/ftp_login
+<ruby>
+#Set the target host
+run_single("set RHOSTS #{ENV['IP_ADDR']}")
+#Set the username file for the scanner
+run_single("set user_file #{ENV['USER_FILE']}")
+#Set the password file for the scanner
+run_single("set pass_file #{ENV['PASS_FILE']}")
+</ruby>
+exploit
+quit

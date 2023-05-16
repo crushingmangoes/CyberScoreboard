@@ -1,0 +1,9 @@
+#Specifies what module to use
+use auxiliary/scanner/netbios/nbname
+<ruby>
+#Set the target host
+run_single("set RHOST #{ENV['IP_ADDR']}")
+</ruby>
+#Run the script and quit
+run
+quit

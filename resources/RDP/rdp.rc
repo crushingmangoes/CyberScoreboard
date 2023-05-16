@@ -1,0 +1,6 @@
+use auxiliary/scanner/rdp/ms12_020_check
+<ruby>
+run_single("set RHOST #{ENV['IP_ADDR']}")
+</ruby>
+run
+quit

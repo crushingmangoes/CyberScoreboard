@@ -1,0 +1,14 @@
+use auxiliary/scanner/winrm/winrm_login
+set db_all_users true
+set db_all_pass true
+<ruby>
+#Set the target host
+run_single("set RHOSTS #{ENV['IP_ADDR']}")
+#Set the username for the scanner
+run_single("set USERNAME #{ENV['USERNAME']}")
+#Set the password for the scanner
+run_single("set PASSWORD #{ENV['PASSWORD']}")
+</ruby>
+run
+sessions -K
+quit

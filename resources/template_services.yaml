@@ -1,0 +1,31 @@
+#Competitions Template Services file
+#Replace USER_FILE and PASS_FILE with the file path of the Username and Password files
+
+
+glassfish: GlassFish/glassfish.rc $IP_ADDR $USER_FILE $PASS_FILE
+
+elasticsearch: Elasticsearch/elasticsearch.sh $IP_ADDR 9200
+
+iis_ftp: IIS/iis_ftp.rc $IP_ADDR $USER_FILE $PASS_FILE
+
+iis_http: IIS/iis_http.rc $IP_ADDR 
+
+jmx: JMX/jmx.sh $IP_ADDR $PORT_NO
+
+snmp: SNMP/snmp.sh $IP_ADDR
+
+webdav: Webdav/webdav.sh $IP_ADDR
+
+manage_enginge: ManageEngine/ManageEngine.sh $IP_ADDR
+
+netbios: NetBIOS/netbios.sh $IP_ADDR
+
+rdp: RDP/rdp.sh $IP_ADDR
+
+psexec: SMB/psexec_2.sh $IP_ADDR Administrator vagrant
+
+winrm: WINRM/winrm.sh $IP_ADDR administrator vagrant
+
+wordpress: Wordpress/WordPress.sh $IP_ADDR 8585 $USER_FILE $PASS_FILE
+
+mysql: MySQL/mysql.sh $IP_ADDR $USER_FILE $PASS_FILE

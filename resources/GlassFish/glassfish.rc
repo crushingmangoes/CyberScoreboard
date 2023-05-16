@@ -1,0 +1,15 @@
+#Specifies what module to use
+use auxiliary/scanner/http/glassfish_login
+<ruby>
+#Set the target host
+run_single("set RHOST #{ENV['IP_ADDR']}")
+#Try blank passwords
+run_single("set BLANK_PASSWORDS true")
+#Specifies the file containing the list of usernames to try
+run_single("set USER_FILE #{ENV['USER_FILE']}")
+#Specifies the list of passwords to try for each username
+run_single("set PASS_FILE #{ENV['PASS_FILE']}")
+</ruby>
+#Run the script and quit
+run
+quit

